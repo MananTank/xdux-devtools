@@ -1,0 +1,24 @@
+{
+  "name": "xedux-devtools",
+  "version": "1.0.0",
+  "description": "Official Devtools for react-xedux ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": ">16.8.3",
+    "xedux": ">4.0.0",
+    "react-xedux": ">3.0.0"
+  },
+  "keywords": [
+    "react",
+    "xedux",
+    "redux",
+    "xedux-devtools",
+    "redux-devtools"
+  ],
+
+  "author": "Manan Tank",
+  "license": "ISC"
+}
