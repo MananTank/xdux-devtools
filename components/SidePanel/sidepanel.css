@@ -1,0 +1,48 @@
+.side-panel {
+	grid-row: 1/3;
+	grid-column: 1/2;
+	background: var(--g-900);
+	display: flex;
+	flex-direction: column;
+	box-shadow: var(--shadow);
+	/* border-right: 4px solid var(--g-800); */
+}
+
+.action {
+	display: flex;
+	padding: 8px;
+	align-items: center;
+}
+
+.action button {
+	visibility: hidden;
+}
+
+.action:hover button {
+	visibility: visible;
+}
+
+.action-type {
+	flex-grow: 1;
+	font-size: 1.2em;
+	letter-spacing: 0.05em;
+}
+
+.side-panel .action {
+	color: var(--g-400);
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.action:hover,
+.action.active {
+	background: var(--g-1000);
+}
+
+.action-types {
+	overflow-y: auto;
+}
+
+.jump {
+	margin-right: 10px;
+}

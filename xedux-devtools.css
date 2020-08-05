@@ -1,0 +1,116 @@
+:root {
+	--g-1100: #07090c;
+	--g-1000: #0d1017;
+	--g-900: #1a202c;
+	--g-800: #2d3748;
+	--g-700: #4a5568;
+	--g-300: #e2e8f0;
+	--g-400: #cbd5e0;
+	--g-500: #a0aec0;
+	--g-600: #718096;
+	--shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.xedux-devtools {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 1fr 0px;
+	height: 100vh;
+	font-family: monospace;
+}
+
+.app-panel {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	overflow-y: auto;
+}
+
+.bottom-panel {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	background: var(--g-800);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.side-panel__title {
+	background: var(--g-800);
+	padding: 15px;
+	color: var(--g-400);
+	border-bottom: 1px solid black;
+	box-shadow: var(--shadow);
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--g-900);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--g-700);
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--g-600);
+}
+
+.toggle-xedux-devtools {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 100000;
+	background: var(--g-900);
+	color: var(--g-400);
+	border: none;
+	padding: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: 1rem;
+}
+
+.toggle-xedux-devtools:hover {
+	opacity: 1;
+}
+
+.clear-xedux-devtools {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 100000;
+	background: var(--g-900);
+	color: var(--g-400);
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.xedux-btn {
+	background: var(--g-900);
+	color: var(--g-400);
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+}
+
+.xedux-btn:hover {
+	background-color: var(--g-800);
+}
